@@ -1,0 +1,208 @@
+{%  load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>DATABASE OF INDIAN AMRY</title>
+
+  <!-- css -->
+  <link href="{% static 'defence/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'defence/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="{% static 'defence/plugins/cubeportfolio/css/cubeportfolio.min.css' %}">
+  <link href="{% static 'defence/css/nivo-lightbox.css' %}" rel="stylesheet" />
+  <link href="{% static 'defence/css/nivo-lightbox-theme/default/default.css' %}" rel="stylesheet" type="text/css" />
+  <link href="{% static 'defence/css/owl.carousel.css' %}" rel="stylesheet" media="screen" />
+  <link href="{% static 'defence/css/owl.theme.css' %}" rel="stylesheet" media="screen" />
+  <link href="{% static 'defence/css/animate.css' %}" rel="stylesheet" />
+  <link href="{% static 'defence/css/style.css' %}" rel="stylesheet">
+
+  <!-- boxed bg -->
+  <link id="bodybg" href="{% static 'defence/bodybg/bg1.css' %}" rel="stylesheet" type="text/css" />
+  <!-- template skin -->
+  <link id="t-colors" href="{% static 'defence/color/default.css'%}" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Medicio
+    Theme URL: https://bootstrapmade.com/medicio-free-bootstrap-theme/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="top-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-6">
+              <p class="bold text-left">INDIAN ARMY </p>
+            </div>
+            <div class="col-sm-6 col-md-6">
+              <p class="bold text-right">Service Before Self</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container navigation">
+
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>s
+                </button>
+          <a class="navbar-brand" href="index.html">
+                    <img src="{% static 'defence/img/logo.jpg' %}" alt="" width="150" height="40" />
+                </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Profile
+                </a></li>
+            <li><a href="#doctor">Leave</a></li>
+            <li><a href="#">Canteen</a></li>
+            <li><a href="#pricing">Medical Checkup</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge custom-badge red pull-right">Extra</span>More <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="index.html">EVENTS</a></li>
+                <li><a href="index-form.html">EXAMS</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+  </div>
+
+<!-- Section: intro -->
+<section id="intro" class="intro">
+    <div class="intro-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="wow fadeInDown" data-wow-offset="0" data-wow-delay="0.1s">
+                        <h2 class="h-ultra"><a href="Login_as_Admin.php"></a>Sign In for Administrator and Guest</h2>
+                    </div>
+                    <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.1s">
+                        <h4 class="h-light"> <span class="color">Indian Air Defence</span> for you</h4>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-wrapper">
+                        <div class="wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s">
+
+
+                            <a href="{%url 'defence:adm'%}">
+                                <input type="submit" value="Administrator" class="btn btn-skin btn-block btn-lg" style="width:40%;"></a>
+                            <a href="{%url 'uaccount:user'%}"><input type="submit" value="USER Login" class="btn btn-skin btn-block btn-lg" style="width:40%;margin right:30px;"></a>
+                            <a href="{%url 'defence:seo'%}"><br><br>
+                                <input type="submit" value="SMO LOGIN" class="btn btn-skin btn-block btn-lg" style="width:40%;"></a>
+                                <a href="{%url 'defence:canteenlg'%}">
+                                <input type="submit" value="CANTEEN" class="btn btn-skin btn-block btn-lg" style="width:40%;"></a>
+ 
+                            <p class="lead-footer"></p>
+
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="col-lg-6">
+              <div class="embed-responsive embed-responsive-4by3">
+                <iframe class="embed-responsive-item" src="{%  static 'defence/sachin.mp4' %}"></iframe>
+              </div>
+            </div>
+    </section>
+
+    <!-- /Section: intro -->
+
+      
+
+    <!-- Section: boxes -->
+   
+   
+
+    <footer>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="wow fadeInDown" data-wow-delay="0.1s">
+              <div class="widget">
+                <h5>About Indian Air Defence</h5>
+                <p>
+                  The Corps of Army Air Defence (abbreviated as AAD), is an active corps of the Indian Army and a major combative formation tasked with air defences of the country from foreign threats. The AAD Corps is responsible for the protection of Indian air space from enemy aircraft and missiles, especially below 5,000 feet.The history of the AAD dates back to 1939 during the times of the British Raj in India. The corps actively took part in the Second World War fighting on behalf of the British Empire. Post independence, the corps has participated in all the wars involving India, starting from the 1947 Indo-Pakistani War to the 1999 Kargil conflict.
+                </p>
+              </div>
+            </div>
+            
+          </div>          
+        </div>
+      </div>
+      <div class="sub-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="wow fadeInLeft" data-wow-delay="0.1s">
+                <div class="text-left">
+                  <p>&copy;Copyright - Futuralabs. All rights reserved.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="wow fadeInRight" data-wow-delay="0.1s">
+                <div class="text-right">
+                  <div class="credits">
+                    <!--
+                     
+                    -->
+                    Designed by <a href="https://bootstrapmade.com/">Pragya,Sachin,Ashwani</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+
+  <!-- Core JavaScript Files -->
+  <script href="{% static 'defence/js/jquery.min.js' %}"></script>
+  <script href="{% static 'defence/js/bootstrap.min.js' %}"></script>
+  <script href="{% static 'defence/js/jquery.easing.min.js' %}"></script>
+  <script href="{% static 'defence/js/wow.min.js' %}"></script>
+  <script href="{% static 'defence/js/jquery.scrollTo.js' %}"></script>
+  <script href="{% static 'defence/js/jquery.appear.js' %}"></script>
+  <script href="{% static 'defence/js/stellar.js' %}" ></script>
+  <script href="{% static 'defence/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js' %}"></script>
+  <script href="{% static 'defence/js/owl.carousel.min.js' %}"></script>
+  <script href="{% static 'defence/js/nivo-lightbox.min.js' %}"></script>
+  <script href="{% static 'defence/js/custom.js'%}"></script>
+  <script href="{% static 'defence/contactform/contactform.js'%}"></script>
+
+</body>
+
+</html>
+ 

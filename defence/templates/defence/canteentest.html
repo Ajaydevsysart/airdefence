@@ -1,0 +1,471 @@
+{%  load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>DATABASE OF INDIAN AMRY</title>
+
+  <!-- css -->
+  <link href="{% static 'defence/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'defence/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="{% static 'defence/plugins/cubeportfolio/css/cubeportfolio.min.css' %}">
+ 
+  <link href="{% static 'defence/css/nivo-lightbox.css' %}" rel="stylesheet" />
+  <link href="{% static 'defence/css/nivo-lightbox-theme/default/default.css' %}" rel="stylesheet" type="text/css" />
+  <link href="{% static 'defence/css/owl.carousel.css' %}" rel="stylesheet" media="screen" />
+  <link href="{% static 'defence/css/owl.theme.css' %}" rel="stylesheet" media="screen" />
+  <link href="{% static 'defence/css/animate.css' %}" rel="stylesheet" />
+  <link href="{% static 'defence/css/style.css' %}" rel="stylesheet">
+
+  
+  <!--food template style-->
+   <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="{%static 'defence/food/assets/css/bootstrap.min.css'%}">
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{%static 'defence/food/assets/css/font-awesome.min.css'%}">
+        <!--        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">-->
+
+
+        <!--For Plugins external css-->
+        <link rel="stylesheet" href="{%static 'defence/food/assets/css/animate/animate.css'%}" />
+        <link rel="stylesheet" href="{%static 'defence/food/assets/css/plugins.css'%}" />
+
+        <!--Theme custom css -->
+        <link rel="stylesheet" href="{%static 'defence/food/assets/css/style.css'%}">
+
+        <!--Theme Responsive css-->
+        <link rel="stylesheet" href="{%static 'defence/food/assets/css/responsive.css'%}" />
+
+        <script src="{%static 'defence/food/assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js'%}"></script>
+
+  <!-- boxed bg -->
+  <link id="bodybg" href="{% static 'defence/bodybg/bg1.css' %}" rel="stylesheet" type="text/css" />
+  <!-- template skin -->
+  <link id="t-colors" href="{% static 'defence/color/default.css'%}" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Medicio
+    Theme URL: https://bootstrapmade.com/medicio-free-bootstrap-theme/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="top-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-6">
+              <p class="bold text-left">INDIAN ARMY </p>
+            </div>
+            <div class="col-sm-6 col-md-6">
+              <p class="bold text-right">Service Before Self</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container navigation">
+
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>s
+                </button>
+          <a class="navbar-brand" href="index.html">
+                    <img src="{% static 'defence/img/logo.jpg' %}" alt="" width="150" height="40" />
+                </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="{%url 'defence:home' %}">Home</a></li>
+            <li><a href="{%url 'defence:userprofile'%}">Profile
+                </a></li>
+            <li><a href="{%url 'defence:userleave' %}">Leave</a></li>
+            <li><a href="{%url 'defence:canteen' %}">Canteen</a></li>
+            <li><a href="{%url 'defence:health'%}">Medical Checkup</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge custom-badge red pull-right">Extra</span>More <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="{%url 'defence:event'%}">Events</a></li>
+                <li><a href="{%url 'defence:exam'%}">Exams</a></li>
+                
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+    <br><br><br><br><br>
+
+       
+            <!-- End navbar-collapse-->
+
+        <section id="slider" class="slider">
+            <div class="slider_overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="main_slider text-center">
+                            <div class="col-md-12">
+                                <div class="main_slider_content wow zoomIn" data-wow-duration="1s">
+                                    <h1>Foody Love</h1>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. </p>
+                                    <button href="" class="btn-lg">Click here</button>
+                                </div>
+                            </div>	
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="abouts" class="abouts">
+            <div class="container">
+                <div class="row">
+                    <div class="abouts_content">
+                        <div class="col-md-6">
+                            <div class="single_abouts_text text-center wow slideInLeft" data-wow-duration="1s">
+                                <img src="assets/images/ab.png" alt="" />
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="single_abouts_text wow slideInRight" data-wow-duration="1s">
+                                <h4>About us</h4>
+                                <h3>WE ARE TASTY</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan</p>
+
+                                <p>dard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesettingdard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
+
+                                <a href="" class="btn btn-primary">click here</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="slider_overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="main_features_content_area  wow fadeIn" data-wow-duration="3s">
+                            <div class="col-md-12">
+                                <div class="main_features_content text-left">
+                                    <div class="col-md-6">
+                                        <div class="single_features_text">
+                                            <h4>Special Recipes</h4>
+                                            <h3>Taste of Precious</h3>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan</p>
+                                            <p>dard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesettingdard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
+
+                                            <a href="" class="btn btn-primary">click here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="portfolio_content text-center  wow fadeIn" data-wow-duration="5s">
+                        <div class="col-md-12">
+                            <div class="head_title text-center">
+                                <h4>Delightful</h4>
+                                <h3>Experience</h3>
+                            </div>
+
+                            <div class="main_portfolio_content">
+                                <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
+                                    <img src="{%static 'defence/food/assets/images/p1.png'%}" alt="" />
+                                    <div class="portfolio_images_overlay text-center">
+                                        <h6>Chinese Noodles</h6>
+                                        <p class="product_price">$10</p>
+                                        <a href="" class="btn btn-primary">Click here</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
+                                    <img src="{%static 'defence/food/assets/images/p2.png'%}" alt="" />
+                                    <div class="portfolio_images_overlay text-center">
+                                        <h6>Italian Source Mushroom</h6>
+                                        <p class="product_price">$12</p>
+                                        <a href="" class="btn btn-primary">Click here</a>
+                                    </div>								
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
+                                    <img src="{%static 'defence/food/assets/images/p3.png'%}" alt="" />
+                                    <div class="portfolio_images_overlay text-center">
+                                        <h6>Alfaham Chicken</h6>
+                                        <p class="product_price">$18</p>
+                                        <a href="" class="btn btn-primary">Click here</a>
+                                    </div>								
+                                </div>
+                                 <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
+                                    <img src="{%static 'defence/food/assets/images/p4.png'%}" alt="" />
+                                    <div class="portfolio_images_overlay text-center">
+                                        <h6>Shawarma</h6>
+                                        <p class="product_price">$8</p>
+                                        <a href="" class="btn btn-primary">Click here</a>
+                                    </div>								
+                                </div>
+                                 <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
+                                    <img src="{%static 'defence/food/assets/images/p5.png'%}" alt="" />
+                                    <div class="portfolio_images_overlay text-center">
+                                        <h6>Italian Source Mushroom</h6>
+                                        <p class="product_price">$12</p>
+                                        <a href="" class="btn btn-primary">Click here</a>
+                                    </div>								
+                                </div>
+                              <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
+                                    <img src="{%static 'defence/food/assets/images/p6.png'%}" alt="" />
+                                    <div class="portfolio_images_overlay text-center">
+                                        <h6>Tofu Stew</h6>
+                                        <p class="product_price">$10</p>
+                                        <a href="" class="btn btn-primary">Click here</a>
+                                    </div>								
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
+                                    <img src="{%static 'defence/food/assets/images/p7.png'%}" alt="" />
+                                    <div class="portfolio_images_overlay text-center">
+                                        <h6>Thali Meals</h6>
+                                        <p class="product_price">$12</p>
+                                        <a href="" class="btn btn-primary">Click here</a>
+                                    </div>								
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
+                                    <img src="{%static 'defence/food/assets/images/p8.png'%}" alt="" />
+                                    <div class="portfolio_images_overlay text-center">
+                                        <h6>Italian Skillet</h6>
+                                        <p class="product_price">$11</p>
+                                        <a href="" class="btn btn-primary">Click here</a>
+                                    </div>								
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ourPakeg" class="ourPakeg">
+            <div class="container">
+                <div class="main_pakeg_content">
+                    <div class="row">
+                        <div class="head_title text-center">
+                            <h4>Amazing</h4>
+                            <h3>Delicious</h3>
+                        </div>
+
+                        <div class="single_pakeg_one text-right wow rotateInDownRight">
+                            <div class="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4">
+                                <div class="single_pakeg_text">
+                                    <div class="pakeg_title">
+                                        <h4>Drinks</h4>
+                                    </div>
+
+                                    <ul>
+                                        <li> Tuna Roast Source........................................................$24.5 </li>
+                                        <li> Tuna Roast Source........................................................$24.5 </li>
+                                        <li> Tuna Roast Source........................................................$24.5 </li>
+                                        <li> Tuna Roast Source........................................................$24.5 </li>
+                                        <li> Tuna Roast Source........................................................$24.5 </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single_pakeg_two text-left wow rotateInDownLeft">
+                            <div class="col-md-6 col-sm-8">
+                                <div class="single_pakeg_text">
+                                    <div class="pakeg_title">
+                                        <h4>Main course </h4>
+                                    </div>
+
+                                    <ul>
+                                        <li> Tuna Roast Source........................................................$24.5 </li>
+                                        <li> Tuna Roast Source........................................................$24.5 </li>
+                                        <li> Tuna Roast Source........................................................$24.5 </li>
+                                        <li> Tuna Roast Source........................................................$24.5 </li>
+                                        <li> Tuna Roast Source........................................................$24.5 </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single_pakeg_three text-left wow rotateInDownRight">
+                            <div class="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4">
+                                <div class="single_pakeg_text">
+                                    <div class="pakeg_title">
+                                        <h4>Desserts</h4>
+                                    </div>
+
+                                    <ul>
+                                        <li> Tuna Roast Source........................................................$24.5 </li>
+                                        <li> Tuna Roast Source........................................................$24.5 </li>
+                                        <li> Tuna Roast Source........................................................$24.5 </li>
+                                        <li> Tuna Roast Source........................................................$24.5 </li>
+                                        <li> Tuna Roast Source........................................................$24.5 </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+
+
+
+
+ <footer>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="wow fadeInDown" data-wow-delay="0.1s">
+              <div class="widget">
+                <h5>About Medicio</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, ne nam purto nihil impetus, an facilisi accommodare sea
+                </p>
+              </div>
+            </div>
+            <div class="wow fadeInDown" data-wow-delay="0.1s">
+              <div class="widget">
+                <h5>Information</h5>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Laboratory</a></li>
+                  <li><a href="#">Medical treatment</a></li>
+                  <li><a href="#">Terms & conditions</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="wow fadeInDown" data-wow-delay="0.1s">
+              <div class="widget">
+                <h5>Medicio center</h5>
+                <p>
+                  Nam leo lorem, tincidunt id risus ut, ornare tincidunt naqunc sit amet.
+                </p>
+                <ul>
+                  <li>
+                    <span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-calendar-o fa-stack-1x fa-inverse"></i>
+								</span> Monday - Saturday, 8am to 10pm
+                  </li>
+                  <li>
+                    <span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+								</span> +62 0888 904 711
+                  </li>
+                  <li>
+                    <span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+								</span> hello@medicio.com
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="wow fadeInDown" data-wow-delay="0.1s">
+              <div class="widget">
+                <h5>Our location</h5>
+                <p>The Suithouse V303, Kuningan City, Jakarta Indonesia 12940</p>
+
+              </div>
+            </div>
+            <div class="wow fadeInDown" data-wow-delay="0.1s">
+              <div class="widget">
+                <h5>Follow us</h5>
+                <ul class="company-social">
+                  <li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li class="social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li class="social-google"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                  <li class="social-vimeo"><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
+                  <li class="social-dribble"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sub-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="wow fadeInLeft" data-wow-delay="0.1s">
+                <div class="text-left">
+                  <p>&copy;Copyright - Medicio Theme. All rights reserved.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="wow fadeInRight" data-wow-delay="0.1s">
+                <div class="text-right">
+                  <div class="credits">
+                    <!--
+                      All the links in the footer should remain intact. 
+                      You can delete the links only if you purchased the pro version.
+                      Licensing information: https://bootstrapmade.com/license/
+                      Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Medicio
+                    -->
+                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+
+  <!-- Core JavaScript Files -->
+  <script src="{%  static 'defence/js/jquery.min.js' %}"></script>
+  <script src="{%  static 'defence/js/bootstrap.min.js' %}"></script>
+  <script src="{%  static 'defence/js/jquery.easing.min.js' %}"></script>
+  <script src="{%  static 'defence/js/wow.min.js' %}"></script>
+  <script src="{%  static 'defence/js/jquery.scrollTo.js' %}"></script>
+  <script src="{%  static 'defence/js/jquery.appear.js' %}"></script>
+  <script src="{%  static 'defence/js/stellar.js' %}"></script>
+  <script src="{%  static 'defence/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js' %}"></script>
+  <script src="{%  static 'defence/js/owl.carousel.min.js' %}"></script>
+  <script src="{%  static 'defence/js/nivo-lightbox.min.js' %}"></script>
+  <script src="{%  static 'defence/js/custom.js' %}"></script>
+
+</body>
+
+</html>
